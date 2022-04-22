@@ -24,6 +24,29 @@
         </nav>
     </header>
 
+    <section class="contenedor formulario">
+        <div class="formulario__grid">
+            <div class="formulario__contenido">
+                <h2 class="formulario__heading text-center">Encuentra y pide comida de tu restaurante favorito</h2>
+                <form class="formulario__buscar">
+                    <div class="formulario__campo">
+                        <label for="restaurante" class="formulario__label">Restaurante</label>
+                        <input id="restaurante" type="text" class="formulario__input" placeholder="Burger King">
+                    </div>
+
+                    <div class="formulario__campo">
+                        <label for="plato" class="formulario__label">Tipo de comida</label>
+                        <input id="plato" type="text" class="formulario__input" placeholder="Ensalada, hamburguesa, vegano">
+                    </div>
+                    <input type="submit" class="formulario__submit" value="Buscar">
+                </form>
+            </div>
+            <div class="formulario__imagen-contenedor">
+                <img class="formulario__imagen" src="build/img/dibujo_repartidor.svg" alt="imagen repartidor">
+            </div>
+        </div>
+    </section>
+
 
 </body>
 </html>
