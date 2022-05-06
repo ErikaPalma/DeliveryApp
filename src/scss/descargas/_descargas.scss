@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.descargas{
+    background-color: v.$grisClaro;
+    padding: v.$separacion 0;
+
+    &__grid{
+        @include m.tablet { 
+            @include m.grid(2, v.$separacion);
+            align-items: center;
+        }
+    }
+
+    &__imagen{
+        width: 50%;
+        margin: 0 auto;
+        transition-property: transform;
+        transition-duration: 300ms;
+        &:hover{
+            transform: rotate(4deg) scale(1.2);
+        }
+    }
+
+    &__contenido{
+        text-align: center;
+        
+    }
+
+    &__heading{
+        margin-bottom: 0;
+        margin-top: v.$separacion;
+        @include m.tablet { 
+            margin-top: 0;
+        }
+    }
+
+    &__botones{
+        display: grid;
+        margin-top: 4rem;
+       @include m.grid(2, v.$separacion);
+        
+    }
+
+    &__enlace{
+        transition-property: transform;
+        transition-duration: 300ms;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
