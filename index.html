@@ -11,6 +11,41 @@
     <link rel="stylesheet" href="/build/css/app.css">
 </head>
 <body>
+
+    <header class="header contenedor">
+            <div class="header__barra">
+                <div class="header__logo">
+                    <img src="src/img/logo.svg" alt="Logo empresa">
+                </div>
+                <nav class="navegacion">
+                    <a class="navegacion__link" href="#">Iniciar sesión</a>
+                    <a class="navegacion__link" href="#">Crear cuenta</a>
+                    <a class="navegacion__link navegacion__link--btn" href="#">Registrar restaurante</a>
+                </nav>
+            </div>
+            <section class="formulario">
+                <div class="formulario__grid">
+                    <div class="formulario__contenido">
+                        <h2 class="formulario__heading">Encuentra y pide comida de tu restaurante favorito</h2>
+                        <form action="#" class="formulario__caja">
+                            <div class="formulario__campo">
+                                <label for="restaurante" class="formulario__label">Restaurante</label>
+                                <input id="restaurante" type="text" class="formulario__input" placeholder="Ej: Taquería Frida">
+                            </div>
+                            <div class="formulario__campo">
+                                <label for="plato" class="formulario__label">Plato</label>
+                                <input id="plato" type="text" class="formulario__input" placeholder="Ej: Tacos ">
+                                <input type="submit" value="Buscar" class="formulario__submit">
+                            </div>
+                        </form>
+                    </div>
+                   
+                    <div class="formulario__imagen">
+                        <img class="formulario__img" src="build/img/dibujo_repartidor.svg" alt="Dibujo repartidor">
+                    </div>
+                </div>
+            </section>
+    </header>
     
 </body>
 </html>
