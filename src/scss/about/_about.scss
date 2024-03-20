@@ -1,0 +1,26 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.about{
+    margin-top: v.$separacion;
+
+    &__contenido{
+        background-color: v.$primario;
+    }
+
+    &__heading{
+        text-align: center;
+        color: v.$blanco;
+        margin: 0;
+        span{
+            display: block;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__grid{
+        @include m.tablet{
+            @include m.grid(3, 2rem);
+        }
+    }
+}
