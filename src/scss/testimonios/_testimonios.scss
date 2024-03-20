@@ -1,0 +1,81 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.testimonios{
+
+    margin-top: v.$separacion;
+
+    &__heading{
+        text-align: center;
+    }
+/*
+    &__grid{
+        @include m.tablet{
+            @include m.grid(5,2rem);
+           
+        }
+
+    }*/
+}
+
+.testimonio{
+    background-color: v.$secundario;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+
+    &__header{
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    &__img {
+        flex-basis: 10rem;
+       border-radius: 100%;
+       overflow: hidden;
+    }
+
+    &__autor {
+        font-weight: 900;
+        color: v.$blanco;
+        
+    }
+    &__texto{
+        color: v.$blanco;
+        font-size: 2rem;
+        line-height: 1.5;
+        margin: 2rem 0 0 0;
+        padding-left: 4rem;
+        position: relative;
+
+        &::before{
+            content: '"';
+            font-size: 10rem;
+            position: absolute;
+            left: 0;
+            top: -4rem;
+            opacity: .2;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    }
+
+    &-1{
+       
+        
+    }
+    &-2{
+        
+    }
+    &-3{
+        
+    }
+    &-4{
+        
+    }
+    &-5{
+        
+    }
+
+    
+}
