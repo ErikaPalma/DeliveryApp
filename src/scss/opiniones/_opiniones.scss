@@ -1,0 +1,68 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.opiniones{
+
+    margin: v.$separacion 0;
+    padding: v.$separacion 0;
+    background-color: v.$grisClaro;
+
+    &__heading{
+        text-align: center;
+        color: v.$secundario;
+    }
+    &__grid{
+        @include m.tablet{
+            @include m.grid(2, v.$separacion);
+        }
+    }
+}
+
+.opinion{
+    background-color: v.$blanco;
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0px 0px 12px 0px rgba(122,122,122,1);
+    margin: 2rem;
+
+    @include m.tablet{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__img{
+        width: 20rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+
+        @include m.tablet{
+            width: 100%;
+            margin: auto;
+            
+        }
+    }
+      
+    &__rating{
+
+        margin: 0 auto;
+        padding-bottom: 2rem;
+
+        @include m.tablet{
+            margin: 0;
+        }
+    }
+    
+    &__autor{
+        color: v.$primario;
+        margin: 0;
+    }
+
+    &__datos{
+        text-align: center;
+
+        @include m.tablet{
+            text-align: left;
+        }
+    }
+}
