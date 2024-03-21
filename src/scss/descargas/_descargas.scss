@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.descargas{
+    background-color: v.$grisClaro;
+    padding: v.$separacion 0;
+
+    &__grid{
+        @include m.tablet{
+            @include m.grid(2, v.$separacion);
+            align-items: center;
+        }
+    }
+
+    &__img{
+        transition: transform .3s ease-in-out;
+        @include m.tablet{
+            width: 50rem;
+        }
+        
+        &:hover{
+           transform: rotate(5deg) scale(1.1);
+        }
+    }
+
+    &__contenido{
+        text-align: center;
+        margin: 5rem 0;
+
+        h3{
+            margin-bottom: 1rem;
+        }
+        p{
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__botones{
+
+        @include m.grid(2, 2rem);
+        a{
+            transition: transform .3s;
+        }
+        a:hover{
+            transform: scale(1.1);
+        }
+         
+    }
+
+}
