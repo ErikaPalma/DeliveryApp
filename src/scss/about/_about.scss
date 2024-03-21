@@ -2,9 +2,11 @@
 @use 'base/mixins' as m;
 
 .about{
-    margin-top: v.$separacion;
 
+    margin: 10rem 0;
+    
     &__contenido{
+        padding-bottom: v.$separacion;
         background-color: v.$primario;
     }
 
